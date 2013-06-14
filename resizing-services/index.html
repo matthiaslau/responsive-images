@@ -25,11 +25,11 @@
     This technique scales the same image for the different resolutions so keep in mind that caring for <a href="http://usecases.responsiveimages.org/#art-direction">Art Direction</a> isn´ that easy.
 </p>
 <p>
-    This example uses the screen.js provided by sencha to determine the screen dimensions and retrieve the fitting image. This could be slow in production due to missing caching as nearly unlimited different resolutions could be retrieved.
+    This example uses the screen.js provided by sencha to determine the screen dimensions and retrieve the fitting image. This could be slow in production due to missing caching as nearly unlimited different resolutions could be retrieved. And this only works starting with the second request as the cookie set by the script must be there when requesting the image.
 </p>
 
 <img
-    src='http://src.sencha.io/wiw/https://dl.dropboxusercontent.com/s/bcvve401h2bbh8y/iguazu.jpg?token_hash=AAG3Zub1ULqTh7dTDIDtUP9ZIngiBtW1Q6qVg_vwDV4Ung&dl=1'
+    src='http://src.sencha.io/wiw/http://matthiaslau.github.io/responsive-images/img/huge-hd.jpg'
     alt='Iguazu Waterfalls'
     />
 
