@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Clown Cars</title>
+    <style>
+        /* Some basic styles */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        object {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Responsive Image Techniques - Clown Cars</h1>
+
+<p>
+    This technique proposed by Estelle uses SVGs with media queries included. See the explanations and examples on <a href="https://github.com/estelle/clowncar">Github</a>.
+</p>
+
+<!-- use the object tag for maximal browser support without security drawbacks -->
+<!-- put the SVG data inline to prevent a second HTTP request -->
+<object data="data:image/svg+xml,%3Csvg%20viewBox='0%200%20300%20329'%20preserveAspectRatio='xMidYMid%20meet'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EIguazu%20Waterfalls%3C/title%3E%3Cstyle%3Esvg%7Bbackground-size:100%25%20auto;background-repeat:no-repeat;%7D@media%20screen%20and%20(max-width:300px)%7Bsvg%7Bbackground-image:url(http://localhost:8010/responsive_images/img/small.jpg);%7D%7D@media%20screen%20and%20(min-width:301px)%7Bsvg%7Bbackground-image:url(http://localhost:8010/responsive_images/img/medium.jpg);%7D%7D@media%20screen%20and%20(min-width:601px)%7Bsvg%7Bbackground-image:url(http://localhost:8010/responsive_images/img/big.jpg);%7D%7D@media%20screen%20and%20(min-width:901px)%7Bsvg%7Bbackground-image:url(http://localhost:8010/responsive_images/img/huge.jpg);%7D%7D%3C/style%3E%3C/svg%3E" type="image/svg+xml">
+    <!-- IE8 fallback -->
+    <!--[if lte IE 8]>
+    <img src="../img/medium.jpg" alt="Iguazu Waterfalls">
+    <![endif]-->
+</object>
+
+</body>
+</html>

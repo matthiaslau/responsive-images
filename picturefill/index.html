@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Picturefill</title>
+    <style>
+            /* Some basic styles */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <script src="picturefill.js"></script>
+</head>
+<body>
+
+<h1>Responsive Image Techniques - SCOTT JEHL´s PICTUREFILL</h1>
+
+<p>
+    This technique is an awesome polyfill of the picture element made by Scott Jehl.
+    Get the code at <a href="https://github.com/scottjehl/picturefill">Github</a>.
+</p>
+
+<span data-picture data-alt="Iguazu Waterfalls">
+    <span data-src="../img/small.jpg"></span>
+    <span data-src="../img/small-hd.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2)"></span>
+    <span data-src="../img/medium.jpg" data-media="(min-width: 301px)"></span>
+    <span data-src="../img/medium-hd.jpg" data-media="(min-width: 301px) and (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2)"></span>
+    <span data-src="../img/big.jpg" data-media="(min-width: 601px)"></span>
+    <span data-src="../img/big-hd.jpg" data-media="(min-width: 601px) and (min-device-pixel-ratio: 2.0)"></span>
+    <span data-src="../img/huge.jpg" data-media="(min-width: 901px)"></span>
+    <span data-src="../img/huge-hd.jpg" data-media="(min-width: 901px) and (min-device-pixel-ratio: 2.0)"></span>
+
+    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+    <noscript>
+        <img src="../img/medium.jpg" alt="Iguazu Waterfalls">
+    </noscript>
+</span>
+
+</body>
+</html>

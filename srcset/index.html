@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SRCSET Element</title>
+    <style>
+            /* Some basic styles */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Responsive Image Techniques - SRCSET Element</h1>
+
+<p>
+    View the spec at the <a href="http://www.w3.org/html/wg/drafts/srcset/w3c-srcset/">Responsive Images Community Group</a>. I haven´t found a good test implementation for a browser yet :-/.
+</p>
+
+<!-- the src attribute is used as a fallback -->
+<img src="../img/medium.jpg" alt=""
+     srcset="../img/small.jpg 300w 1x, ../img/small-hd.jpg 600w 2x, ../img/medium.jpg 600w 1x, ../img/medium-hd.jpg 1200w 2x, ../img/big.jpg 1200w 1x, ../img/big-hd.jpg 2400w 2x, ../img/huge.jpg 1x, ../img/huge-hd.jpg 2x">
+
+</body>
+</html>
