@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Picturefill</title>
+    <style>
+            /* Some basic styles */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <script src="picturefill_wilto.js"></script>
+</head>
+<body>
+
+<h1>Responsive Image Techniques - WILTO´s PICTUREFILL</h1>
+
+<p>
+    This technique is an awesome polyfill of the picture element made by Scott Jehl and pimped by @wilto.
+    Get the code at <a href="https://github.com/Wilto/picturefill-proposal">Github</a>.
+</p>
+
+<picture alt="Iguazu Waterfalls">
+    <source src="../img/small.jpg" media="(max-width: 300px)">
+    <source src="../img/medium.jpg" media="(min-width: 301px)">
+    <source src="../img/big.jpg" media="(min-width: 601px)">
+    <source src="../img/huge.jpg" media="(min-width: 901px)">
+
+    <!-- Fallback content for non-JS browsers. Same src as the initial source element. -->
+    <noscript><img src="../img/medium.jpg" alt="Iguazu Waterfalls"></noscript>
+</picture>
+
+</body>
+</html>
