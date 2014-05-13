@@ -23,14 +23,9 @@
 </p>
 
 <picture>
-    <source media="(min-width: 901px)" src="../img/huge.jpg">
-    <source media="(min-width: 601px)" src="../img/big.jpg">
-    <source media="(min-width: 301px)" src="../img/medium.jpg">
-    <source src="../img/small.jpg">
+    <source sizes="100vw" srcset="../img/small.jpg 300w, ../img/medium.jpg 600w, ../img/huge.jpg 1200w">
     <!-- fallback img if picture is not supported -->
-    <img src="../img/medium.jpg" alt="">
-    <!-- alternate text -->
-    <p>Iguazu Waterfalls</p>
+    <img src="../img/medium.jpg" alt="Iguazu">
 </picture>
 
 </body>
